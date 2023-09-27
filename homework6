@@ -1,0 +1,40 @@
+package homework;
+
+import java.util.Scanner;
+
+public class homework6 {
+	public static void main(String[] args) {
+
+		System.out.println("\tЗадача 1 ");
+		int myNumber;
+		System.out.print("\nEnter a number: ");
+		Scanner scanner = new Scanner(System.in);
+		myNumber = scanner.nextInt();
+		double result;
+
+		System.out.printf("The square root of " + myNumber + " is: " + "%.5f", Math.sqrt(myNumber));
+
+		System.out.println("\t\n\nЗадача 2 ");
+
+		System.out.print("\nEnter another number: ");
+		int number = scanner.nextInt();
+
+		String result1 = (number % 2 == 0 ? "Even" : "Odd");
+		System.out.println("The number is " + result1);
+
+		System.out.println("\t\n\nЗадача 3 ");
+
+		System.out.println("\n\nNow let's see the grades ");
+		System.out.printf("---------------------%n");
+		System.out.printf("    Дневник   %n");
+		System.out.printf("---------------------%n");
+		System.out.printf(" |%-10s| %-4s|%n", " Име", "Оценка");
+		System.out.printf("---------------------%n");
+		System.out.printf(" |%-10s|%07d| %n", "Иванчо", 2);
+		System.out.printf(" |%-10s|%07d| %n", "Ани", 2);
+		System.out.printf(" |%-10s|%07d| %n", "Марийка", 2);
+		System.out.printf(" |%-10s|%07d| %n", "Пенчо", 2);
+		System.out.printf(" |%-10s|%07d| %n", "Бориславчо", 2);
+
+	}
+}
